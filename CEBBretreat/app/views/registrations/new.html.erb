@@ -1,0 +1,45 @@
+<p><><><><><><><><><><><><><><><><><><></p>
+<h1>Registration </h1>
+<h2>for 2009 Retreat</h2> 
+<p>><><><><><><><><><><><><><<><><><><></p>
+
+<%= error_messages_for :registration %>
+
+<% form_for(@registration) do |f| %>
+  <p>
+    <b>Last name</b><br />
+    <%= f.text_field :Last_name %>
+  </p>
+
+  <p>
+    <b>First name</b><br />
+    <%= f.text_field :First_name %>
+  </p>
+
+  <p>
+    <b>Job title</b><br />
+    <%= f.text_field :Job_title %>
+  </p>
+
+  <p>
+    <b>Department</b><br />
+    <%= f.text_field :Department %>
+  </p>
+
+  <p>
+    <b>Phone</b><br />
+    <%= f.text_field :Phone %>
+  </p>
+
+  <p>
+    <b>Email</b><br />
+    <%= f.text_field :Email %>
+  </p>
+    
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', '../home' %>

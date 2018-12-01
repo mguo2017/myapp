@@ -1,0 +1,22 @@
+<h1>Abstract Upload</h1>
+
+
+<%= stylesheet_link_tag 'scaffold' %>
+
+<body>
+<p> . </p>
+<% form_for :upload,:post, :html => { :multipart => true, :id => "upload_form" }, :method => 'post', :url => { :action => "uploadFile" } do |f| %> 
+
+<h3><label for="upload_file">Attach File</label> : </h3>
+
+<p><%= file_field 'upload', 'datafile', 'size' =>70 %> </p>
+
+<input type="submit" id="save" class="save" value="Upload"> 
+
+<% end %>
+
+<p> . </p>
+
+<%= link_to 'Back', '../home' %>
+
+</body>

@@ -1,0 +1,36 @@
+<p>
+  <b>Last name:</b>
+  <%=h @registration.Last_name %>
+</p>
+
+<p>
+  <b>First name:</b>
+  <%=h @registration.First_name %>
+</p>
+
+<p>
+  <b>Job title:</b>
+  <%=h @registration.Job_title %>
+</p>
+
+<p>
+  <b>Department:</b>
+  <%=h @registration.Department %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @registration.Phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @registration.Email %>
+</p>
+
+
+<%= link_to 'Edit', edit_registration_path(@registration) %> 
+<p>
+	<%= link_to 'Upload Abstract', '../upload' %>
+</p>
+<%= link_to 'Back', registrations_path %>
